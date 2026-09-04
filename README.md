@@ -4,7 +4,7 @@
 Campusly is a student organization web app prototype. It helps a student track courses, manage a to-do list, and calculate GPA all in one spot. The purpose of the project is to create a simple academic dashboard using HTML, CSS, Python, and Flask.
 
 # Video Link
-Add your video link here: [Insert video link]
+Add your video link here: https://www.youtube.com/watch?v=hTT-_Pil6Z4
 
 # Installation and Setup Instructions
 1. Download or clone the project folder.
