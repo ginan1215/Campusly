@@ -1,0 +1,290 @@
+/* Campusly main stylesheet for front end design */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0efe9;
+  margin: 0;
+  padding: 0;
+  color: #1a1a18;
+}
+/*styles for headers*/
+.header {
+  background-color: white;
+  border-bottom: 1px solid #e0dfd8;
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header h1 {
+  font-family: Georgia, serif;
+  font-size: 22px;
+  margin: 0;
+  font-weight: 400;
+}
+
+.header-date {
+  font-size: 13px;
+  color: #888;
+}
+
+/*styles for navigation bar and links*/
+.nav {
+  display: flex;
+  background-color: white;
+  border-bottom: 1px solid #e0dfd8;
+  padding: 0 24px;
+}
+
+.nav a {
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  color: #888;
+  padding: 12px 16px;
+  font-size: 14px;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: #1a1a18;
+  border-bottom-color: #1a1a18;
+}
+
+/*styles for page layout and typography*/
+.page {
+  padding: 24px;
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: Georgia, serif;
+  font-size: 22px;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+}
+
+h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+}
+/*section gap*/
+.section-gap {
+  margin-top: 24px;
+}
+
+/*styles for  course cards, todo items, stats boxes*/
+.card,
+.course-card,
+.todo-item {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e0dfd8;
+}
+
+.card {
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+/*styles for stats boxes*/
+.stats-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  background: #f5f4f0;
+  border-radius: 10px;
+  padding: 16px 20px;
+  flex: 1;
+  min-width: 120px;
+  text-align: center;
+}
+
+.stat-number {
+  font-family: Georgia, serif;
+  font-size: 28px;
+  color: #3B6D11;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #888;
+  margin-top: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/*styles for forms and buttons*/
+input,
+select {
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  color: #1a1a18;
+}
+
+.form-row {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-row label {
+  width: 85px;
+  font-size: 13px;
+  color: #666;
+  flex-shrink: 0;
+}
+
+/*styles for buttons*/
+.btn,
+.btn-dark {
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 8px;
+  margin-right: 6px;
+}
+
+.btn {
+  background: white;
+  color: #1a1a18;
+  border: 1px solid #ccc;
+}
+
+.btn-dark {
+  background: #1a1a18;
+  color: white;
+  border: 1px solid #1a1a18;
+}
+
+/*styles for course cards and todo items*/
+.course-card {
+  padding: 16px 20px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.course-card h3 {
+  margin: 0 0 3px 0;
+}
+
+.course-card h3 span {
+  color: #aaa;
+  font-weight: 400;
+}
+
+.course-card p {
+  margin: 0;
+  font-size: 13px;
+  color: #888;
+}
+
+.grade-badge {
+  background: #f0efe9;
+  color: #3B6D11;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.todo-item {
+  padding: 12px 16px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.todo-item.done .todo-text {
+  text-decoration: line-through;
+  color: #bbb;
+}
+
+.todo-text {
+  flex: 1;
+  font-size: 14px;
+}
+
+.priority-tag {
+  padding: 2px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+/* priority colors for todo items*/
+.high { background: #fce8e8; color: #c0392b; }
+.med { background: #fef3e0; color: #d68910; }
+.low { background: #e8f5ee; color: #1e8449; }
+
+.due-date {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.empty-msg {
+  color: #bbb;
+  font-size: 14px;
+  text-align: center;
+  padding: 24px;
+}
+
+/*styles for GPA calculator forms and results*/
+.gpa-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.gpa-row {
+  display: flex;
+  gap: 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0efe9;
+}
+
+#gpa-result {
+  margin-top: 16px;
+  font-family: Georgia, serif;
+  font-size: 28px;
+  color: #3B6D11;
+}
+
+/*grade scale*/
+.grade-scale {
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 16px;
+  line-height: 2;
+}
+
+/*styles for checkboxes and remove buttons in todo list*/
+.checkbox-btn,
+.btn-remove {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn-remove {
+  color: #aaa;
+}
+
+.btn-remove:hover {
+  color: #e74c3c;
+}
