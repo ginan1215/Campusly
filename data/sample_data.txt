@@ -1,0 +1,13 @@
+Campusly Sample Data
+
+Sample Course:
+Name: Intro to Computer Science
+Code: CS 1114
+Credits: 3
+Instructor: Dr. Johnson
+Grade: A-
+
+Sample Task:
+Text: Study for midterm
+Priority: Medium
+Due Date: 2026-05-10
